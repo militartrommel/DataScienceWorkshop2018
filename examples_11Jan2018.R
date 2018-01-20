@@ -71,15 +71,3 @@ ggplot(foo2, aes(as.factor(cyl),estimate, fill=term)) +
 
 #####################################################################################
 
-
-# as a function
-  
-
-red.plot <- function(x,y,...){
-  plot(as.factor(x),y, ...) 
-}
-  
-red.plot(foo2$cyl,foo2$p.value, beside=TRUE, xlab="Number of cyl", ylab="Significance level")
-
-
-
